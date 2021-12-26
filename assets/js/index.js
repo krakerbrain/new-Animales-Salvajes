@@ -13,7 +13,6 @@ const select = () => {
   button.addEventListener("click", () => {
     const animal = animalSeleccionado.options[animalSeleccionado.selectedIndex].value;
     tarjetaAnimales(animal);
-    sonidoAnimales(animal);
   });
 };
 select();
@@ -28,9 +27,4 @@ const tarjetaAnimales = (animal) => {
   let animalObject = data.find((data) => data.name == animal);
   const cardAnimal = new BuscarAnimal(animalObject.name, animalObject.imagen, animalObject.sonido);
   cardAnimal.tarjetaAnimal();
-};
-const sonidoAnimales = (animal) => {
-  let animalObject = data.find((data) => data.name == animal);
-  const sonidoAnimal = new BuscarAnimal(animalObject.name, animalObject.imagen, animalObject.sonido);
-  sonidoAnimal.sonidosCard();
 };

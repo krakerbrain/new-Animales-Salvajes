@@ -15,6 +15,7 @@ body {
 /* Formulario */
 
 #preview {
+  width: 100%;
   height: 200px;
   background-image: url(../imgs/lion.svg);
   background-position: top;
@@ -22,11 +23,31 @@ body {
   background-repeat: no-repeat;
 }
 
-.previewAnimal {
-  margin: 0 auto;
+#preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
-.preview2 {
-  height: 200px;
+
+.modal-content {
+  width: 600px;
+  height: 700px;
+  color: white;
+  text-align: center;
+}
+.imgModal {
+  width: 500px;
+  height: 500px;
+}
+
+.imgModal img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cuerpoModal {
+  margin-top: 10px;
 }
 
 /* Tabla de Participantes */
