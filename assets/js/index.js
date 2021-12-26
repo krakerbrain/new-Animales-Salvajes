@@ -1,5 +1,5 @@
-import { BuscarAnimal } from "../../bakend/models/BuscarAnimal.js";
-import { data } from "../../bakend/data/assetsAnimales.js";
+import { BuscarAnimal } from "../../models/BuscarAnimal.js";
+import { data } from "../../data/assetsAnimales.js";
 
 const animalSeleccionado = document.getElementById("animal");
 const edadAnimal = document.getElementById("edad");

@@ -1,5 +1,3 @@
-import { data } from "../data/assetsAnimales.js";
-
 export class BuscarAnimal {
   constructor(nombre, imagen, sonido) {
     this.nombre = nombre;
